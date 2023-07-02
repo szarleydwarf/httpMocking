@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import HTTPMocking
 
 final class HTTPMockingUITests: XCTestCase {
 
@@ -14,10 +15,12 @@ final class HTTPMockingUITests: XCTestCase {
     override func setUp() {
         super.setUp()
         self.app = XCUIApplication()
+        self.continueAfterFailure = true
+        self.app.launchEnvironment = ["ENV": "TEST"]
         self.app.launch()
     }
 
-    func testExample() {
+    func test_display_user_info() {
         let usernameTF =  self.app.textFields["username"]
         let passwordTF =  self.app.textFields["password"]
         print("user -> ", usernameTF)

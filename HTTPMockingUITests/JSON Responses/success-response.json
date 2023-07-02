@@ -1,0 +1,11 @@
+{
+    "message": "hello there Rad",
+  "loginInfo": {
+    "successInfo": "You got it right :)",
+    "errorInfo": "Ups. Looks like something is wrong...Please, try again...",
+  },
+  "user": {
+    "name": "Rad",
+    "password": "BlaBl4"
+  }
+}

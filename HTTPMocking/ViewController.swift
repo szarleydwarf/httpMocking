@@ -17,9 +17,11 @@ class ViewController: UIViewController {
    
     @IBOutlet weak var infoLabel: UILabel!
     
+    var loginVM = LoginViewModel(client: HTTPClientFactory.create())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {

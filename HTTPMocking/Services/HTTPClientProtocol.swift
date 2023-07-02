@@ -8,5 +8,5 @@
 import Foundation
 
 protocol HTTPClientProtocol {
-    func auth(_ username: String, _ password: String, completion: @escaping (LoginInfo) -> Void)
+    func authenticate(_ username: String, _ password: String, completion: @escaping (UserObj?) -> Void)
 }

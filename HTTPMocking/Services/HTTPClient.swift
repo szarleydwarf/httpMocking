@@ -7,16 +7,16 @@
 
 import Foundation
 
-class HTTPClient {
-    
-    func auth(_ username: String, _ password: String, completion: @escaping (LoginInfo) -> Void) {
-        guard let url = URL(string:  "some url") else {
+class HTTPClient: HTTPClientProtocol {
+
+    func authenticate(_ username: String, _ password: String, completion: @escaping (UserObj?) -> Void) {
+        guard let url = URL(string:  "https://succinct-fourth-scent.glitch.me/hithere") else {
             return
         }
         
         let params  = ["username": username, "password": password]
         var request = URLRequest(url: url)
-        request.httpMethod = "GET"
+        request.httpMethod = "POST"
         request.httpBody = try? JSONEncoder().encode(params)
         
         URLSession.shared.dataTask(with: request) { data, resp, erro in
@@ -24,8 +24,9 @@ class HTTPClient {
                 return
             }
             
-            let loginInfo = try? JSONDecoder().decode(LoginInfo.self, from: data)
-            completion(loginInfo)
+            if let loginInfo = try? JSONDecoder().decode(UserObj.self, from: data) {
+                completion(loginInfo)
+            }
             
         }.resume()
     }

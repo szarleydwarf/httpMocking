@@ -20,8 +20,8 @@ class LoginViewModel: ObservableObject {
     }
     
     func login() {
-        self.client.authenticate(username: self.username, password: self.password) { user in
-            if let user = user {
+        self.client.authenticate(self.username, self.password) { userObj in
+            if let user = userObj {
                 DispatchQueue.main.async {
                     self.userVM = UserViewModel(user)
                 }
