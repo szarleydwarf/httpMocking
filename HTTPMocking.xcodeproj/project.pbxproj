@@ -16,6 +16,7 @@
 		D748EC4029D04429005B1541 /* HTTPMockingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D748EC3F29D04429005B1541 /* HTTPMockingTests.swift */; };
 		D748EC4A29D04429005B1541 /* HTTPMockingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D748EC4929D04429005B1541 /* HTTPMockingUITests.swift */; };
 		D748EC4C29D04429005B1541 /* HTTPMockingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D748EC4B29D04429005B1541 /* HTTPMockingUITestsLaunchTests.swift */; };
+		E0F098842A52B94900A1AC4B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F098832A52B94900A1AC4B /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D748EC4529D04429005B1541 /* HTTPMockingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTPMockingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D748EC4929D04429005B1541 /* HTTPMockingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMockingUITests.swift; sourceTree = "<group>"; };
 		D748EC4B29D04429005B1541 /* HTTPMockingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMockingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0F098832A52B94900A1AC4B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D748EC3129D04428005B1541 /* Assets.xcassets */,
 				D748EC3329D04428005B1541 /* LaunchScreen.storyboard */,
 				D748EC3629D04428005B1541 /* Info.plist */,
+				E0F098832A52B94900A1AC4B /* NetworkManager.swift */,
 			);
 			path = HTTPMocking;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F098842A52B94900A1AC4B /* NetworkManager.swift in Sources */,
 				D748EC2D29D04424005B1541 /* ViewController.swift in Sources */,
 				D748EC2929D04424005B1541 /* AppDelegate.swift in Sources */,
 				D748EC2B29D04424005B1541 /* SceneDelegate.swift in Sources */,
