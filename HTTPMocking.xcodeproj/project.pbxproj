@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D709606A29E6A967008EDACB /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709606929E6A967008EDACB /* HTTPClient.swift */; };
-		D709606C29E6A9D1008EDACB /* LoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709606B29E6A9D1008EDACB /* LoginInfo.swift */; };
-		D709606E29E6AC68008EDACB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709606D29E6AC68008EDACB /* LoginViewModel.swift */; };
-		D709607029E6ACA5008EDACB /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709606F29E6ACA5008EDACB /* HTTPClientProtocol.swift */; };
 		D748EC2929D04424005B1541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D748EC2829D04424005B1541 /* AppDelegate.swift */; };
 		D748EC2B29D04424005B1541 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D748EC2A29D04424005B1541 /* SceneDelegate.swift */; };
 		D748EC2D29D04424005B1541 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D748EC2C29D04424005B1541 /* ViewController.swift */; };
@@ -40,10 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D709606929E6A967008EDACB /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		D709606B29E6A9D1008EDACB /* LoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfo.swift; sourceTree = "<group>"; };
-		D709606D29E6AC68008EDACB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		D709606F29E6ACA5008EDACB /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientProtocol.swift; sourceTree = "<group>"; };
 		D748EC2529D04424005B1541 /* HTTPMocking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTTPMocking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D748EC2829D04424005B1541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D748EC2A29D04424005B1541 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,10 +106,6 @@
 				D748EC3129D04428005B1541 /* Assets.xcassets */,
 				D748EC3329D04428005B1541 /* LaunchScreen.storyboard */,
 				D748EC3629D04428005B1541 /* Info.plist */,
-				D709606929E6A967008EDACB /* HTTPClient.swift */,
-				D709606B29E6A9D1008EDACB /* LoginInfo.swift */,
-				D709606D29E6AC68008EDACB /* LoginViewModel.swift */,
-				D709606F29E6ACA5008EDACB /* HTTPClientProtocol.swift */,
 			);
 			path = HTTPMocking;
 			sourceTree = "<group>";
@@ -270,13 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D709607029E6ACA5008EDACB /* HTTPClientProtocol.swift in Sources */,
 				D748EC2D29D04424005B1541 /* ViewController.swift in Sources */,
 				D748EC2929D04424005B1541 /* AppDelegate.swift in Sources */,
-				D709606E29E6AC68008EDACB /* LoginViewModel.swift in Sources */,
-				D709606A29E6A967008EDACB /* HTTPClient.swift in Sources */,
 				D748EC2B29D04424005B1541 /* SceneDelegate.swift in Sources */,
-				D709606C29E6A9D1008EDACB /* LoginInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
