@@ -50,6 +50,7 @@
 		D748EC4529D04429005B1541 /* HTTPMockingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTPMockingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D748EC4929D04429005B1541 /* HTTPMockingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMockingUITests.swift; sourceTree = "<group>"; };
 		D748EC4B29D04429005B1541 /* HTTPMockingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMockingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E032326E2A53FE3E00551328 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		E0F098832A52B94900A1AC4B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D748EC3F29D04429005B1541 /* HTTPMockingTests.swift */,
+				E032326E2A53FE3E00551328 /* data.json */,
 			);
 			path = HTTPMockingTests;
 			sourceTree = "<group>";

@@ -3,7 +3,7 @@
 //  HTTPMockingTests
 //
 //  Created by The App Experts on 26/03/2023.
-//
+// "https://succinct-fourth-scent.glitch.me/userLoginTest"
 
 import XCTest
 @testable import HTTPMocking
@@ -20,7 +20,7 @@ final class HTTPMockingTests: XCTestCase {
         session.data = data
         
         // Create a URL (using the file path API to avoid optionals)
-        let url = URL(fileURLWithPath: "url")
+        let url = URL(fileURLWithPath: "/data.json")
         
         // Perform the request and verify the result
         var result: NetworkResult?
