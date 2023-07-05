@@ -20,6 +20,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let parameters = PagingParameters(page: 0, number: 10)
+next part 4
+        var request = HTTPRequest()
+//        request.body = JSONBody(parameters)
+        request.body = FormBody(["greeting": "Hello, ", "target": "🌎"])
+        print("REQUEST.", request)
+        print("BODY.", request.body)
+        print("DONE")
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -27,3 +36,7 @@ class ViewController: UIViewController {
     
 }
 
+struct PagingParameters: Encodable {
+    let page: Int
+    let number: Int
+}
