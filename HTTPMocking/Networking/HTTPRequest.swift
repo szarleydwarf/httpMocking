@@ -31,6 +31,10 @@ extension HTTPRequest {
         get { urlComponents.path }
         set { urlComponents.path = newValue }
     }
+    
+    public var url: URL? {
+        get { urlComponents.url }
+    }
 
 }
 
