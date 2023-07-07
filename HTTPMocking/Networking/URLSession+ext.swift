@@ -43,9 +43,10 @@ extension URLSession: HTTPLoading {
         
         let dataTask = self.dataTask(with: urlRequest) { (data, response, error) in
             // construct a Result<HTTPResponse, HTTPError> out of the triplet of data, url response, and url error
-            let result = HTTPResult
-            }
-            completion(result)
+            
+            let result = HTTPResult(request: request, responseData: data, response: response, error: error)
+            
+            completion(.success())
         }
         
         // off we go!
